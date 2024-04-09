@@ -17,7 +17,7 @@ jobs:
       - name: Setup the release version and overwrite the existing major version tag
         run: |
           major_version=$(echo $GITHUB_REF_NAME | cut -d. -f1)
-          git config --local user.email "arvin@gmail.com"
-          git config --local user.name "ArvinHPWD"
+          git config --local user.email "pwd@gmail.com"
+          git config --local user.name "UkePWD"
           git tag -fa $major_version -m "Update $major_version tag and add version $GITHUB_REF_NAME to it"
           git push origin $major_version --force
